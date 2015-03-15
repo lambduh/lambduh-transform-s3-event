@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/lambduh/lambduh-transform-s3-event/issues"
   },
-  "homepage": "https://github.com/lambduh/lambduh-transform-s3-event"
+  "homepage": "https://github.com/lambduh/lambduh-transform-s3-event",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "gulp": "^3.8.11",
+    "gulp-mocha": "^2.0.0",
+    "mocha": "^2.2.1"
+  }
 }
