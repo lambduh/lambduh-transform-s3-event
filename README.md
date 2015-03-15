@@ -1,7 +1,7 @@
 # lambduh-transform-s3-event
 Takes S3 event JSON, returns the bucket and key.
 
-# usage
+# Usage
 
 ```javascript
 var Q = require('q');
@@ -28,5 +28,4 @@ exports.handler = function(event, context) {
 }
 ```
 
-This module takes s3 Event JSON and returns the source bucket and key of the event, either by attaching `.srcBucket` and `.srcKey` to a passed options object, or by creating a new options object if none is passed.
-
+This module takes S3 Event JSON and returns the source `bucket` and `key` of the event, either by attaching `.srcBucket` and `.srcKey` to a passed options object, or, if none is passed, by creating a new one.
