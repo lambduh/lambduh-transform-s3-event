@@ -1,0 +1,26 @@
+{
+  "name": "lambduh-transform-s3-event",
+  "version": "1.0.0",
+  "description": "Transform s3 event json into an object with bucket and key",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lambduh/lambduh-transform-s3-event.git"
+  },
+  "keywords": [
+    "lambda",
+    "s3",
+    "event",
+    "json",
+    "aws"
+  ],
+  "author": "Russell Matney <russell.matney@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lambduh/lambduh-transform-s3-event/issues"
+  },
+  "homepage": "https://github.com/lambduh/lambduh-transform-s3-event"
+}
