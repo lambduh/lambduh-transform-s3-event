@@ -11,7 +11,7 @@ var transformS3Event = require('lambduh-transform-s3-event');
 exports.handler = function(event, context) {
   var promises = [];
   
-  promises.push(transformS3Event(event)()) //where `event` is an S3 event
+  promises.push(transformS3Event(event)) //where `event` is an S3 event
   
   promises.push(function(options) {
     console.log(options.srcBucket); //source bucket for s3 Event
