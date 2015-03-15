@@ -7,8 +7,12 @@ describe('transformS3Event', function() {
     expect(transform).to.exist;
   });
 
-  it('should return a promise', function() {
-    expect(transform().then).to.exist;
-    expect(transform().fail).to.exist;
+  it('should return a function', function() {
+    expect(transform()).to.be.a('function');
+  });
+
+  it('should return a function that returns a promise', function() {
+    expect(transform()().then).to.exist;
+    expect(transform()().fail).to.exist;
   });
 });
