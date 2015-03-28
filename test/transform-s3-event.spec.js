@@ -8,7 +8,7 @@ describe('transformS3Event', function() {
   });
 
   it('should return a promise', function() {
-    expect(transform({}, {}).then).to.exist;
+    expect(transform(null, {}).then).to.exist;
   });
 
   it('should throw an error if the input event is null', function(done) {
@@ -22,7 +22,7 @@ describe('transformS3Event', function() {
 
   it('should throw an error if the input event is not an s3 Event', function(done) {
     var event = {};
-    transform({}, event).then(function() {
+    transform(null, event).then(function() {
       done(new Error('This event should have thrown an error.'));
     }, function(err) {
       expect(err).to.exist
@@ -32,7 +32,7 @@ describe('transformS3Event', function() {
 
   it('(with proper input) should attach the srcBucket and srcKey to an inputted result object', function(done) {
     var event = require('./good-input.json')
-    transform({}, event).then(function(result) {
+    transform(null, event).then(function(result) {
       if (result && result.srcBucket && result.srcKey) {
         expect(result.srcBucket).to.exist.and.to.be.a('string')
         expect(result.srcKey).to.exist.and.to.be.a('string')
