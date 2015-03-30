@@ -1,6 +1,6 @@
 {
   "name": "lambduh-transform-s3-event",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transform s3 event json into an object with bucket and key",
   "main": "index.js",
   "scripts": {
